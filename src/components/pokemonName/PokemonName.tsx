@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import './pokemonName.css'
-class PokemonName extends Component {
+
+interface Props {
+    name: string,
+    number: string,
+}
+
+class PokemonName extends Component<Props> {
     render() {
+        const { name, number } = this.props;
         return (
             <div className="pokemon-name">
-                pokemon
-                <span className="name-no">No. 1</span>
+                {name}
+                <span className="name-no">No.{number}</span>
             </div>
         )
     }

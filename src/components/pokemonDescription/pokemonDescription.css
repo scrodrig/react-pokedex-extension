@@ -1,7 +1,9 @@
 .pokemon-description {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0;
+    text-align: center;
     min-height: 115px;
     box-sizing: border-box;
-    flex: 1;
+    display: flex;
+    align-items: center;
 }

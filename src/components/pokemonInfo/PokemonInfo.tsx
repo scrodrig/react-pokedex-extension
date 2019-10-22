@@ -4,17 +4,25 @@ import PokemonName from '../pokemonName/PokemonName';
 import PokemonDescription from '../pokemonDescription/PokemonDescription';
 import PokemonPhoto from '../pokemonPhoto/PokemonPhoto';
 import './pokemonInfo.css'
-class PokemonInfo extends Component {
+import PokemonUtils from '../../utils/PokemonUtils';
+
+interface Props {
+    pokemon: any;
+}
+
+
+class PokemonInfo extends Component<Props> {
+
     render() {
+        const { pokemon } = this.props
+        console.log('lol', pokemon.sprites)
         return (
             <div className="panel left-panel">
                 <Screen >
-                    <PokemonName />
+                    <PokemonName name={pokemon.name} number={pokemon.order} />
                 </Screen>
-                <PokemonPhoto />
-                <Screen >
-                    <PokemonDescription />
-                </Screen>
+                <PokemonPhoto frontPhotoUri={pokemon.sprites.front_default} backPhotoUri={pokemon.sprites.back_default} />
+                <PokemonDescription pokemon={pokemon} />
             </div>
         )
     }

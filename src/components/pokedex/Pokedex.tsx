@@ -3,14 +3,20 @@ import './pokedex.css'
 import Divider from '../divider/Divider';
 import PokemonInfo from '../pokemonInfo/PokemonInfo';
 import PokemonDetail from '../pokemonDetail/PokemonDetail';
-class Pokedex extends Component {
+
+interface PokedexProps {
+    pokemon: any;
+}
+
+class Pokedex extends Component<PokedexProps> {
     render() {
+        const { pokemon } = this.props
         return (
             <div className='pokedex-container'>
                 <div className="pokedex-frame" >
                     <PokemonDetail />
                     <Divider />
-                    <PokemonInfo />
+                    <PokemonInfo pokemon={pokemon} />
                 </div>
             </div>
         );

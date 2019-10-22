@@ -21,7 +21,7 @@ class PokemonStats extends Component {
 
     private statLine(key: string, value: string) {
         return <div>
-            {this.padStats(key, value, ".", 18)}
+            {this.padStats(key, value, ".", 20)}
         </div>;
     }
 }

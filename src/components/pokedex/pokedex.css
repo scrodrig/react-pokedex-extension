@@ -1,7 +1,7 @@
 .pokedex-frame {
     display: flex;
     background-color: #e61515;
-    width: 65%;
+    width: 90%;
     margin: 0 auto;
     padding: 1em;
     border-radius: 15px;
@@ -10,7 +10,8 @@
 
 .pokedex-container {
     display: flex;
-    width:75%;
+    width:60%;
+    min-width: 700px;
     text-align: center;
     height: 100%;
     align-items: center;
