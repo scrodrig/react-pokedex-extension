@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
+import Screen from '../screen/Screen';
 import './pokemonInfo.css'
 class PokemonInfo extends Component {
     render() {
         return (
             <div className="panel left-panel">
-                <div className="pokemon-name screen">
-                    pokemon
+                <Screen >
+                    <div className="pokemon-name">
+                        pokemon
                     <span className="name-no">No.</span>
-                </div>
+                    </div>
+                </Screen>
                 <img src="pokemon.png" alt="pokemon" className="pokemon-photo" />
-                <div className="pokemon-description screen">Pokemon description</div>
+                <Screen >
+                    <div className="pokemon-description">Pokemon description</div>
+                </Screen>
             </div>
         )
     }
