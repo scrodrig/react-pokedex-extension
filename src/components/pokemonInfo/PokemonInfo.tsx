@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Screen from '../screen/Screen';
 import PokemonName from '../pokemonName/PokemonName';
+import PokemonDescription from '../pokemonDescription/PokemonDescription';
+import PokemonPhoto from '../pokemonPhoto/PokemonPhoto';
 import './pokemonInfo.css'
 class PokemonInfo extends Component {
     render() {
@@ -9,9 +11,9 @@ class PokemonInfo extends Component {
                 <Screen >
                     <PokemonName />
                 </Screen>
-                <img src="pokemon.png" alt="pokemon" className="pokemon-photo" />
+                <PokemonPhoto />
                 <Screen >
-                    <div className="pokemon-description">Pokemon description</div>
+                    <PokemonDescription />
                 </Screen>
             </div>
         )

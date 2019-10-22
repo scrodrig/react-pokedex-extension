@@ -2,22 +2,3 @@
     padding: 0;
     width: 50%;
 }
-
-.pokemon-photo {
-    width: 100%;
-    display: flex;
-    image-rendering: pixelated;
-    border: inset #9aa28b 3px;
-    border-radius: 15px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    background: linear-gradient(15deg, #cad5b5 64%, #dde2d4 70%, #dde2d4 81%, #fff 86%, #dde2d4 89%, #dde2d4 100%);
-}
-
-.pokemon-description {
-    font-size: 18px;
-    letter-spacing: 0;
-    min-height: 115px;
-    box-sizing: border-box;
-    flex: 1;
-}
