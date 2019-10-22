@@ -1,27 +1,34 @@
 import React, { Component } from 'react';
+import Screen from '../screen/Screen'
+import CommonUtils from '../../utils/commonUtils'
 import './pokemonStats.css'
-class PokemonStats extends Component {
 
-    padStats(key: string, value: string, separetor: string, length: number) {
-        value = value || "";
-        let output = `${key.toString()}${separetor.repeat(length - (value.toString().length + key.toString().length))}${value.toString()}`;
-        return output;
-    }
+interface Props {
+    stats: Array<any>;
+}
 
+class PokemonStats extends Component<Props> {
     render() {
+        const { stats } = this.props;
         return (
-            <div className="stats">
-                <div className="stat-line">
-                    {this.statLine('attack', '12')}
-                    {this.statLine('defense', '18')}
+            <Screen>
+                <div className="stats">
+                    {stats.map((stat, index) => {
+                        return (
+                            <div key={`${index}${stat.stat.name}`} className="stat-line">
+                                {this.statLine(stat.stat.name, stat.base_stat)}
+                            </div>
+                        )
+                    })}
                 </div>
-            </div>
+            </Screen >
+
         )
     }
 
     private statLine(key: string, value: string) {
         return <div>
-            {this.padStats(key, value, ".", 20)}
+            {CommonUtils.padStats(key, value, ".", 20)}
         </div>;
     }
 }

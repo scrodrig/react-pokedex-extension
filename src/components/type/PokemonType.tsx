@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
 import './pokemonType.css'
-class PokemonType extends Component {
+
+
+interface Props {
+    types: Array<any>;
+}
+
+class PokemonType extends Component<Props> {
     render() {
+        const { types } = this.props
+        const finalTypes = types.sort((a, b) => { return (a.slot - b.slot) })
+        console.log('finalTypes', finalTypes)
         return (
             <div className="type-list">
                 <div className="panel-header">Types</div>
                 <div className="type-box">
-                    <div className="type poison">Poison</div>
-                    <div className="type grass">Grass</div>
+                    {finalTypes.map((type, index) => {
+                        const finalName = type.type.name
+                        return (<div key={`${index}${finalName}`} className={`type ${finalName}`}>{finalName}</div>)
+                    })}
+
                 </div>
             </div>
         )

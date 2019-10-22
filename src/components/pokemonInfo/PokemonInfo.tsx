@@ -4,7 +4,6 @@ import PokemonName from '../pokemonName/PokemonName';
 import PokemonDescription from '../pokemonDescription/PokemonDescription';
 import PokemonPhoto from '../pokemonPhoto/PokemonPhoto';
 import './pokemonInfo.css'
-import PokemonUtils from '../../utils/PokemonUtils';
 
 interface Props {
     pokemon: any;

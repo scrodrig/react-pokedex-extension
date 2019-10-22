@@ -14,7 +14,7 @@ class Pokedex extends Component<PokedexProps> {
         return (
             <div className='pokedex-container'>
                 <div className="pokedex-frame" >
-                    <PokemonDetail />
+                    <PokemonDetail pokemon={pokemon} />
                     <Divider />
                     <PokemonInfo pokemon={pokemon} />
                 </div>
