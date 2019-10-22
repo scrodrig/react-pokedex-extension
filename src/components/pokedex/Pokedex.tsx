@@ -8,9 +8,9 @@ class Pokedex extends Component {
         return (
             <div className='pokedex-container'>
                 <div className="pokedex-frame" >
-                    <PokemonInfo />
-                    <Divider />
                     <PokemonDetail />
+                    <Divider />
+                    <PokemonInfo />
                 </div>
             </div>
         );
