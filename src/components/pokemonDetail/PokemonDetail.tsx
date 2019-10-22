@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
 import PokemonType from '../type/PokemonType';
 import Screen from '../screen/Screen'
+import PokemonStats from '../pokemonStats/PokemonStats'
 import './pokemonDetail.css'
+
 class PokemonDetail extends Component {
     render() {
         return (
             <div className="panel right-panel">
                 <div className="panel-row">
                     <Screen >
-                        <div className="stats">
-                            <div className="stat-line">
-                                x.......x
-                                y.......y
-                                z.......z
-                                </div>
-                        </div>
+                        <PokemonStats />
                     </Screen>
                     <PokemonType />
                 </div>

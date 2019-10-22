@@ -1,16 +1,3 @@
-.stats {
-    width: '50%';
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px;
-    flex: 1;
-}
-.stat-line {
-    font-size: 17px;
-    text-transform: capitalize;
-}
-
 .right-panel {
     padding: 0;
     width: 50%;

@@ -1,0 +1,13 @@
+.stats {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    margin: 5px;
+    flex: 1;
+}
+.stat-line {
+    font-size: 14px;
+    text-transform: capitalize;
+}
