@@ -1,0 +1,13 @@
+.pokemon-name {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-align: left;
+    text-transform: capitalize;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.name-no {
+    float: right;
+    text-transform: lowercase;
+}
