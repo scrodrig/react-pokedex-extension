@@ -8,7 +8,6 @@ class PokemonType extends Component {
                 <div className="type-box">
                     <div className="type poison">Poison</div>
                     <div className="type grass">Grass</div>
-                    <div className="type bug">Bug</div>
                 </div>
             </div>
         )
