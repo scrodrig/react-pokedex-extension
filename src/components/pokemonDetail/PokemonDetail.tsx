@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PokemonType from '../type/PokemonType';
 import './pokemonDetail.css'
 class PokemonDetail extends Component {
     render() {
@@ -12,13 +13,7 @@ class PokemonDetail extends Component {
                             z.......z
                                 </div>
                     </div>
-                    <div className="type-list">
-                        <div className="panel-header">Types</div>
-                        <div className="type-box">
-                            <div className="type poison">Poison</div>
-                            <div className="type grass">Grass</div>
-                        </div>
-                    </div>
+                    <PokemonType />
                 </div>
             </div>
         )
