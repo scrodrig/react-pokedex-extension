@@ -14,7 +14,6 @@ class PokemonInfo extends Component<Props> {
 
     render() {
         const { pokemon } = this.props
-        console.log('lol', pokemon.sprites)
         return (
             <div className="panel left-panel">
                 <Screen >

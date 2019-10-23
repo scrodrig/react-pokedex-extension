@@ -10,7 +10,6 @@ class PokemonType extends Component<Props> {
     render() {
         const { types } = this.props
         const finalTypes = types.sort((a, b) => { return (a.slot - b.slot) })
-        console.log('finalTypes', finalTypes)
         return (
             <div className="type-list">
                 <div className="panel-header">Types</div>
