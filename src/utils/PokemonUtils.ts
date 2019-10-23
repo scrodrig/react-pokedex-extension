@@ -16,9 +16,14 @@ class PokemonUtils {
         }
     };
 
-    pickDescription = (pokemon:any, locale: string) => {
+    pickDescription = (pokemon: any, locale: string) => {
         const descriptions = pokemon.species.flavor_text_entries.filter((e: any) => e.language.name === "en").map((e: any) => e.flavor_text)
         return descriptions[Math.floor(Math.random() * descriptions.length)]
+    }
+
+    static loadMove = async (url: string) => {
+        const response = await axios.get(url);
+        return response.data
     }
 }
 

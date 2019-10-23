@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PokemonType from '../type/PokemonType';
 import PokemonStats from '../pokemonStats/PokemonStats'
 import PokedexCamera from '../pokedexCamera/PokedexCamera'
+import PokemonMoves from '../pokemonMoves/PokemonMoves'
 import './pokemonDetail.css'
 
 
@@ -20,6 +21,7 @@ class PokemonDetail extends Component<Props> {
                     <PokemonType types={pokemon.types} />
                     <PokemonStats stats={pokemon.stats} />
                 </div>
+                <PokemonMoves moves={pokemon.moves} />
             </div>
         )
     }

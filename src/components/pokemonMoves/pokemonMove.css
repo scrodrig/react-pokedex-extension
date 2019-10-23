@@ -1,0 +1,30 @@
+.moves-title{
+    letter-spacing: 1ex;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+.move-panel {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.move-name {
+    font-size: 24px;
+    border-bottom: solid black 2px;
+    margin-bottom: 3px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.move-type {
+    font-size: 15px;
+    text-transform: uppercase;
+    border: solid black 2px;
+    border-radius: 7px;
+    padding: 2px 10px;
+    text-align: center;
+}
