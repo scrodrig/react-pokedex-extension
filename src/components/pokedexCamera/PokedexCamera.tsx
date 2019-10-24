@@ -7,7 +7,7 @@ class PokedexCamera extends Component {
             <div>
                 <div className="circle-camera"></div>
                 <div className="panel-title">
-                    <img src="images/title.png" />
+                    <img alt="title" src="images/title.png" />
                 </div>
                 <div>
                     <div className="panel-camera-top">

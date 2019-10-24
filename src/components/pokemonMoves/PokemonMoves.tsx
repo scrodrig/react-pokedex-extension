@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PokemonMove from './PokemonMove';
+import PokemonButtons from '../pokemonButtons/PokemonButtons';
 import PokemonUtils from '../../utils/PokemonUtils';
 import './pokemonMoves.css'
 
@@ -68,6 +69,7 @@ class PokemonMoves extends Component<Props, State> {
             <div>
                 <div className="panel-header">Moves</div>
                 <PokemonMove move={currentMove} level={level} />
+                <PokemonButtons />
             </div>
         )
     }
