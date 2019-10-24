@@ -34,11 +34,13 @@ class PokemonDescription extends Component<Props, State> {
     render() {
         const { description } = this.state
         return (
-            <Screen onClick={() => { this.changeDescription() }} fixedHeight="120px">
-                <div className="pokemon-description">
-                    {description}
-                </div>
-            </Screen>
+            <div className="description-container">
+                <Screen onClick={() => { this.changeDescription() }} fixedHeight="100px">
+                    <div className="pokemon-description">
+                        {description}
+                    </div>
+                </Screen>
+            </div>
         )
     }
 }

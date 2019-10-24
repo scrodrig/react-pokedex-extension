@@ -11,7 +11,7 @@
 .pokedex-container {
     display: flex;
     width:40%;
-    min-width: 90vh;
+    min-width:100vh;
     text-align: center;
     height: 100%;
     align-items: center;

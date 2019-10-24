@@ -1,5 +1,6 @@
 .right-panel {
     padding: 3px;
+    /* flex:1; */
     width: 50%;
 }
 
@@ -18,7 +19,7 @@
     text-transform: capitalize;
     font-size: 1.25em;
     padding: 5px;
-    font-family: "Staatliches", cursive;
+    color: #460f0f;
     letter-spacing: 2px;
     display: flex;
     justify-content: center;

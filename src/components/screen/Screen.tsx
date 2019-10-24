@@ -16,7 +16,7 @@ class Screen extends Component<Props> {
     render() {
         const { onClick, fixedHeight } = this.props
         return (
-            <div className="screen" style={{ height: fixedHeight }} onClick={onClick}>
+            <div className="screen" style={{ minHeight: fixedHeight }} onClick={onClick}>
                 {this.props.children}
             </div>
         )

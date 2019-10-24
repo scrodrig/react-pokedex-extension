@@ -7,21 +7,27 @@ import './pokemonInfo.css'
 import PokemonButtons from '../pokemonButtons/PokemonButtons';
 
 interface Props {
-    pokemon: any;
+    pokemon: any,
+    onClickUp?: () => void,
+    onClickDown?: () => void
 }
 
 
 class PokemonInfo extends Component<Props> {
+    static defaultProps = {
+        onClickUp: () => { },
+        onClickDown: () => { }
+    };
 
     render() {
-        const { pokemon } = this.props
+        const { pokemon, onClickUp, onClickDown } = this.props
         return (
             <div className="panel left-panel">
                 <Screen >
                     <PokemonName name={pokemon.name} number={pokemon.order} />
                 </Screen>
                 <PokemonPhoto frontPhotoUri={pokemon.sprites.front_default} backPhotoUri={pokemon.sprites.back_default} />
-                <PokemonButtons onClickDown={() => { }} onClickUp={() => { }} />
+                <PokemonButtons onClickDown={onClickDown} onClickUp={onClickUp} />
                 <PokemonDescription pokemon={pokemon} />
             </div>
         )

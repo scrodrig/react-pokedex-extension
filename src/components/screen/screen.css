@@ -1,7 +1,7 @@
 .screen {
     background: linear-gradient(14deg, rgb(165, 205, 83) 60%, rgb(193, 217, 144) 65%);
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     font-family: 'VT323', monospace;
     border: inset #879a65 3px;
 }
