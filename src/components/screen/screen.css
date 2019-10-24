@@ -5,3 +5,12 @@
     font-family: 'VT323', monospace;
     border: inset #879a65 3px;
 }
+
+.screen-title{
+    letter-spacing: 1pt;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid black 2px;
+    border-radius: 5px;
+}

@@ -15,7 +15,7 @@ class PokemonMove extends Component<Props> {
         return (
             <div style={{ flex: 1 }}>
                 <Screen>
-                    <div className="moves-title">Moves stats</div>
+                    <div className="screen-title">Moves stats</div>
                     <div className="move-panel">
                         <div className="move-left">
                             <div className="move-stat">{CommonUtils.padStats("Accuracy", move.accuracy, ".", 15)}</div>

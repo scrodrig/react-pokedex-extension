@@ -3,6 +3,7 @@ import PokemonType from '../type/PokemonType';
 import PokemonStats from '../pokemonStats/PokemonStats'
 import PokedexCamera from '../pokedexCamera/PokedexCamera'
 import PokemonMoves from '../pokemonMoves/PokemonMoves'
+import PokemonComplementaryInfo from '../pokemonComplementaryInfo/PokemonComplementaryInfo'
 import './pokemonDetail.css'
 
 
@@ -22,6 +23,7 @@ class PokemonDetail extends Component<Props> {
                     <PokemonStats stats={pokemon.stats} />
                 </div>
                 <PokemonMoves moves={pokemon.moves} />
+                <PokemonComplementaryInfo pokemon={pokemon} />
             </div>
         )
     }
