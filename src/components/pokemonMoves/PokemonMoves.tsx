@@ -34,16 +34,17 @@ class PokemonMoves extends Component<Props, State> {
         }
     }
 
-    openMove(item: any) {
+    openMove(item: any, currentIndex: number = 0) {
         const { move } = item
         PokemonUtils.loadMove(move.url).then((response) => {
             this.setState({
-                currentMove: response
+                currentMove: response,
+                currentIndex: currentIndex
             })
-            console.log(this.state.currentMove)
         }).catch(() => {
             this.setState({
-                currentMove: this.clearMove()
+                currentMove: this.clearMove(),
+                currentIndex: 0
             })
         })
     }
@@ -51,14 +52,15 @@ class PokemonMoves extends Component<Props, State> {
     nextMove() {
         const { moves } = this.props;
         const { currentIndex } = this.state;
-        const index = currentIndex > moves.length ? currentIndex + 1 : currentIndex
-        this.openMove(index + 1)
+        const index = currentIndex < moves.length ? currentIndex + 1 : currentIndex
+        this.openMove(moves[index], index)
     }
 
     prevMove() {
+        const { moves } = this.props;
         const { currentIndex } = this.state;
-        const index = currentIndex > 0 ? currentIndex - 1 : currentIndex
-        this.openMove(index - 1)
+        const index = currentIndex < moves.length && currentIndex > 0 ? currentIndex - 1 : currentIndex
+        this.openMove(moves[index], index)
     }
 
     render() {
@@ -69,7 +71,7 @@ class PokemonMoves extends Component<Props, State> {
             <div>
                 <div className="panel-header">Moves</div>
                 <PokemonMove move={currentMove} level={level} />
-                <PokemonButtons />
+                <PokemonButtons onClickUp={() => { this.prevMove() }} onClickDown={() => { this.nextMove() }} />
             </div>
         )
     }

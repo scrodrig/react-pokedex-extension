@@ -10,18 +10,29 @@
 .move-panel {
     display: flex;
     margin-top: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+.move-left{
+    flex:1;
+}
+
+.move-right{
+    flex:1;
+}
+
+.move-stat{
+    font-size: 12px;
 }
 
 .move-name {
-    font-size: 24px;
+    font-size: 20px;
     border-bottom: solid black 2px;
     margin-bottom: 3px;
     text-align: center;
     text-transform: capitalize;
 }
 .move-type {
-    font-size: 15px;
+    font-size: 10px;
     text-transform: uppercase;
     border: solid black 2px;
     border-radius: 7px;

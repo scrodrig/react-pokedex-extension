@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import './pokemonButtons.css'
 
-class PokemonButtons extends Component {
+interface Props {
+    onClickUp: () => void;
+    onClickDown: () => void;
+}
+
+class PokemonButtons extends Component<Props> {
     render() {
+        const { onClickUp, onClickDown } = this.props;
         return (
             <div className="panel-header">
                 <div className="button-group">
-                    <div className="button"><div className="arrow up" /></div>
-                    <div className="button"><div className="arrow down" /></div>
-                </div>
-            </div>
+                    <div className="button" onClick={() => { onClickUp() }}><div className="arrow up" /></div>
+                    <div className="button" onClick={() => { onClickDown() }}><div className="arrow down" /></div>
+                </div >
+            </div >
         )
     }
 }

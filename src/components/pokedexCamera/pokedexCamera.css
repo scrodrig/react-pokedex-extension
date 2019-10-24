@@ -1,13 +1,13 @@
 .panel-camera-top {
     display: flex;
-    padding: 0px 0 0 3px;
+    padding: 0px 0 0 1px;
     justify-content: space-evenly;
     background:#e61515;
 }
 
 .panel-camera-bottom {
     display: flex;
-    padding: 0 0 0px 3px;
+    padding: 0 0 0px 1px;
     justify-content: space-evenly;
     background:#e61515;
 }
@@ -15,26 +15,29 @@
 
 .panel-camera-1 {
     height: 25px;
-    border-top: solid #460f0f 2px;
-    border-left: solid #460f0f 2px;
+    border-top: solid #460f0f 3px;
+    border-left: solid #460f0f 3px;
     display: flex;
     flex: 1;
-    background:#8B1500;
+    /* background: #8B1500; */
+    background: linear-gradient(14deg, #460f0f 0, #891313 50%,#891313 60%, #891313 75%, #891313 95%);
 }
 
 .panel-camera-2 {
     height: 25px;
     flex: 1;
-    border-top: solid #460f0f 2px;
-    background:#8B1500;
+    border-top: solid #460f0f 3px;
+    /* background: #8B1500; */
+    background: linear-gradient(20deg, #891313 0, #891313 30%, #b31818 55%, #fd5555 85%, #b31818 95%);
     border-bottom-right-radius: 10%;
 }
 
 .panel-camera-3 {
     height: 25px;
-    border-left: solid #460f0f 2px;
+    border-left: solid #460f0f 3px;
     flex: 1;
-    background:#8B1500;
+    /* background: #8B1500; */
+    background: linear-gradient(14deg, #460f0f 0, #891313 50%,#891313 60%, #891313 75%, #891313 95%);
     border-bottom-right-radius: 5%;
 }
 
@@ -48,7 +51,8 @@
 .inverse {
     height: 25px;
     flex: 1;
-    background: #8B1500;
+    background: linear-gradient(14deg, #891313 0, #891313 70%, #b31818 85%, #fd5555 98%, #b31818 100%);
+    /* background: #8B1500; */
 }
 
 .circle-camera {
