@@ -19,6 +19,7 @@ class PokemonComplementaryInfo extends Component<Props> {
                         <div className="info-stat">{this.statLine("Habitat", species.habitat.name)}</div>
                         <div className="info-stat">{this.statLine("Shape", species.shape.name)}</div>
                         <div className="info-stat">{this.statLine("Growth", species.growth_rate.name.replace("-"," "))}</div>
+                        <div className="info-stat">{this.statLine("Happiness", species.base_happiness)}</div>
                         <div className="info-stat">{this.statLine("Height", CommonUtils.heightTransform(pokemon.height))}</div>
                         <div className="info-stat">{this.statLine("Weight", CommonUtils.weightTransform(pokemon.weight))}</div>
                     </div>

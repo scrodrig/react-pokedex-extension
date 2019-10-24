@@ -12,7 +12,7 @@
 }
 
 .move-stat{
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .move-name {
@@ -23,7 +23,7 @@
     text-transform: capitalize;
 }
 .move-type {
-    font-size: 10px;
+    font-size: 12px;
     text-transform: uppercase;
     border: solid black 2px;
     border-radius: 7px;
