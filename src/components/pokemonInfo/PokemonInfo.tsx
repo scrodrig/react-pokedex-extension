@@ -24,7 +24,7 @@ class PokemonInfo extends Component<Props> {
         return (
             <div className="panel left-panel">
                 <Screen >
-                    <PokemonName name={pokemon.name} number={pokemon.order} />
+                    <PokemonName name={pokemon.name} number={pokemon.id} />
                 </Screen>
                 <PokemonPhoto frontPhotoUri={pokemon.sprites.front_default} backPhotoUri={pokemon.sprites.back_default} />
                 <PokemonButtons onClickDown={onClickDown} onClickUp={onClickUp} />

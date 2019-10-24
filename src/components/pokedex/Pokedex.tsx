@@ -30,7 +30,6 @@ class Pokedex extends Component<{}, State> {
     loadPokemon(id: number) {
         PokemonUtils.getPokemon(id).then((result: any) => {
             this.setState({ pokemon: result, currentId: id })
-            console.log(this.state.pokemon)
         });
     }
 
@@ -38,7 +37,6 @@ class Pokedex extends Component<{}, State> {
         const { currentId } = this.state;
         const newId = currentId >= 1 && currentId < POKEMON_LIMIT ? currentId + 1 : currentId
         this.loadPokemon(newId);
-        console.log('Next', newId)
     }
 
     prevPokemon() {

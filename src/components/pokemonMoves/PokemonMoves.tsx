@@ -21,9 +21,21 @@ class PokemonMoves extends Component<Props, State> {
             currentMove: this.clearMove(),
             currentIndex: 0
         }
+    }
+
+    componentDidMount() {
         const { moves } = this.props;
         const { currentIndex } = this.state;
         this.openMove(moves[currentIndex]);
+    }
+
+
+    componentDidUpdate(prevProps: Props) {
+        const { moves } = this.props;
+        if (moves !== prevProps.moves) {
+            const currentIndex = 0
+            this.openMove(moves[currentIndex]);
+        }
     }
 
     clearMove() {
