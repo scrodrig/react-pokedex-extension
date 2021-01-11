@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
 import './pokedex.css'
+
+import React, { Component } from 'react';
+
 import Divider from '../divider/Divider';
-import PokemonInfo from '../pokemonInfo/PokemonInfo';
 import PokemonDetail from '../pokemonDetail/PokemonDetail';
+import PokemonInfo from '../pokemonInfo/PokemonInfo';
 import PokemonUtils from '../../utils/PokemonUtils'
 
 interface State {
@@ -44,7 +46,6 @@ class Pokedex extends Component<{}, State> {
         const newId = currentId > 1 ? currentId - 1 : currentId
         this.loadPokemon(newId);
     }
-
 
     render() {
         const { pokemon } = this.state

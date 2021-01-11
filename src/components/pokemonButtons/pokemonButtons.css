@@ -10,7 +10,6 @@
 .button {
     display: flex;
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(39,43,45,1) 43%, rgba(64,64,64,1) 57%, rgba(64,64,64,1) 69%);
-    /* background-color: #404040 ; */
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -24,7 +23,6 @@
     border: groove #000000 1.2px;
 }
 
-
 .arrow.up {
     width: 0;
     height: 0;
@@ -32,7 +30,7 @@
     border-right: 10px solid transparent;
     border-bottom: 10px solid #404040;
     margin-bottom: 2px;
-  }
+}
 
 .arrow.down {
     width: 0;
@@ -41,4 +39,23 @@
     border-right: 10px solid transparent;
     border-top: 10px solid #404040;
     margin-top: 2px;
+}
+
+
+.arrow.right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #404040;
+  margin-left: 2px;
+}
+
+.arrow.left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #404040;
+  margin-right: 2px;
 }
